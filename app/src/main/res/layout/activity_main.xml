@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hellobaidumap.MainActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_screen"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="65dp"
+            android:background="@drawable/button_refresh"
+            android:layout_height="65dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_toLeftOf="@+id/scanner"
+            android:layout_toStartOf="@+id/scanner" />
+
+        <Button
+            android:id="@+id/locate"
+            android:background="@drawable/button_locate"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="61dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/danger"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/button_danger"
+            android:layout_alignTop="@+id/locate"
+            android:layout_alignLeft="@+id/help"
+            android:layout_alignStart="@+id/help" />
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/button_help"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/linearLayout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout">
+
+            <Button
+                android:id="@+id/enemies"
+                android:background="@drawable/main_enemies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/friends"
+                android:background="@drawable/main_friends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#149c0f"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/scanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/radar_scanner"
+            android:scaleType="center"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

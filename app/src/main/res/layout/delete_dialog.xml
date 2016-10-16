@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="#771515"
+    android:orientation="horizontal"
+    android:id="@+id/delete_dialog">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名： "
+        android:textSize="20sp"
+        android:textColor="#13a309"/>
+
+    <TextView
+        android:id="@+id/delete_name"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

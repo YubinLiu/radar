@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:id="@+id/e_layout_showArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/red_image"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/enemies_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/enemies_name"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:paddingLeft="5dp"
+            android:layout_toLeftOf="@+id/delete_button"
+            android:textColor="#6d1517"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/red_image"
+            android:layout_alignBottom="@+id/red_image"
+            android:layout_alignTop="@+id/red_image" />
+
+        <Button
+            android:id="@+id/e_delete_button"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/delete_image"
+            android:visibility="invisible"
+            android:focusable="false"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/e_layout_hideArea"
+        android:layout_below="@+id/e_layout_showArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#560c0e" >
+
+        <TextView
+            android:id="@+id/e_nameHidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fa000d"
+            android:text="NAME:"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/e_nameHiddenInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/e_nameHidden" />
+
+        <TextView
+            android:id="@+id/e_numberHidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fa000d"
+            android:layout_below="@id/e_nameHiddenInput"
+            android:text="NUMBER:"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/e_numberHiddenInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/e_numberHidden" />
+
+        <TextView
+            android:id="@+id/e_latitudeHidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fa000d"
+            android:layout_below="@id/e_numberHiddenInput"
+            android:text="LATITUDE:"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/e_latitudeHiddenInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/e_latitudeHidden" />
+
+        <TextView
+            android:id="@+id/e_longitudeHidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fa000d"
+            android:layout_below="@id/e_latitudeHiddenInput"
+            android:text="LONGITUDE:"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/e_longitudeHiddenInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/e_longitudeHidden" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

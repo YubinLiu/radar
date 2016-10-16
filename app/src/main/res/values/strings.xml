@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloBaiduMap</string>
+    <string name="refreshStr">刷新</string>
+    <string name="enemies">ENEMIES</string>
+    <string name="friends">FRIENDS</string>
+    <string name="add">+</string>
+    <string name="edit">Edit</string>
+</resources>
