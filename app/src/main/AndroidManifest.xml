@@ -33,6 +33,7 @@
             android:value="xk2YG7esFRHFFRQ8GTaBsT2HdeUVMlNw"/>
 
         <activity android:name=".MainActivity"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,10 +43,12 @@
         </activity>
 
         <activity android:name=".EnemiesActivity"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
 
         <activity android:name=".FriendsActivity"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
 

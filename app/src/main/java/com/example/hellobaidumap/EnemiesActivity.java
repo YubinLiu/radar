@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -44,6 +45,8 @@ public class EnemiesActivity extends Activity {
     private boolean isDelete = false;
 
     private Button radar;
+
+    private Button toFriends;
 
     EnAdapter enAdapter;
 
@@ -100,7 +103,17 @@ public class EnemiesActivity extends Activity {
         radar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(EnemiesActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        toFriends = (Button) findViewById(R.id.to_friends);
+        toFriends.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EnemiesActivity.this, FriendsActivity.class);
+                startActivity(intent);
             }
         });
     }

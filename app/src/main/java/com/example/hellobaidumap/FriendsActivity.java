@@ -56,6 +56,8 @@ public class FriendsActivity extends Activity {
 
     private Button radar;
 
+    private Button toEnemies;
+
     MyAdapter mAdapter;
 
     @Override
@@ -111,7 +113,17 @@ public class FriendsActivity extends Activity {
         radar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(FriendsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        toEnemies = (Button) findViewById(R.id.to_enemies);
+        toEnemies.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FriendsActivity.this, EnemiesActivity.class);
+                startActivity(intent);
             }
         });
     }
